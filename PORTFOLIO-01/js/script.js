@@ -15,6 +15,7 @@ let nav_links = document.querySelectorAll('.nav_link');
 
 function navAction(){
     header.classList.remove('active')
+    menuToggle.classList.toggle('fa-times')
  }
 
 nav_links.forEach(function(e){
