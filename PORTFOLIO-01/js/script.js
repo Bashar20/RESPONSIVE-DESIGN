@@ -9,3 +9,14 @@
      menuToggle.classList.toggle('fa-times')
      header.classList.toggle('active')
  }
+
+
+let nav_links = document.querySelectorAll('.nav_link');
+
+function navAction(){
+    header.classList.remove('active')
+ }
+
+nav_links.forEach(function(e){
+  e.addEventListener('click',navAction)
+})
