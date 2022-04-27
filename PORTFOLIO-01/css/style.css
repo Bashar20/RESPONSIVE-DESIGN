@@ -1,0 +1,549 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+:root{
+    --bg-color:#e6e6e6;
+    --black:#444;
+    --green:#27ae60;
+    --light-color:#777;
+    --botder:.1rem solid rgba(0,0,0,0.2);
+    --box-shadow :.4rem .4rem 1rem #ccc,
+                 -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset :.4rem .4rem 1rem #ccc inset,
+                 -.4rem -.4rem 1rem #fff inset;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    padding-left: 30rem;
+}
+
+
+/* 
+********************************************************
+              Common Section Start
+******************************************************** */
+
+section{
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+.section-heading{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--black);
+}
+.section-heading span{
+    color:var(--green);
+}
+
+
+/* 
+********************************************************
+              Common Section Ends
+******************************************************** */
+
+
+
+
+
+
+/* 
+********************************************************
+              Header Section Start
+******************************************************** */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30rem;
+    border-right: var(--botder);
+    padding: 2rem;
+    text-align: center;
+    z-index: 999;
+    background: var(--bg-color);
+}
+.user{
+    margin-top: 2rem;
+}
+
+.header .user img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    border: 1rem solid transparent;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+}
+.header .user h2{
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.header .user p{
+    color: var(--green);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+}
+
+.header .navbar{
+    padding-top: 3rem;
+}
+.header .navbar a{
+    display: block;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    margin: 1.4rem 0;
+    padding: .9rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 4rem;
+}
+.header .navbar a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+
+
+/* 
+********************************************************
+              Header Section Ends
+******************************************************** */
+
+
+
+
+
+
+/* 
+********************************************************
+              Menu Button Ends
+******************************************************** */
+
+.menu-btn{
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    background: var(--bg-color);
+}
+.menu-btn:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+
+/* 
+********************************************************
+              Menu Button Ends
+******************************************************** */
+
+
+
+/* 
+********************************************************
+               Home Section Start
+******************************************************** */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content h1{
+   font-size: 6rem; 
+   color: var(--black);
+}
+.content p{
+   font-size: 2.5rem; 
+   color: var(--green);
+   font-weight: 500;
+   margin-bottom: 3rem;
+   text-transform: none;
+}
+.content a{
+   font-size: 2.3rem; 
+   color:var(--black);
+   font-weight: 500;
+   box-shadow: var(--box-shadow);
+   padding: 1rem 5rem;
+   border-radius: 1rem;
+}
+.content a:hover{
+    box-shadow: var(--box-shadow-inset);
+}
+.home .social-icon{
+    margin-top: 12rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    
+}
+.home .social-icon a{
+    color: var(--black);
+    font-size: 2.5rem;
+    box-shadow: var(--box-shadow);
+    margin-right: .5rem;
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: .3rem;
+}
+.home .social-icon a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--green);
+}
+
+
+/* 
+********************************************************
+               Home Section Ends
+******************************************************** */
+
+
+/* 
+********************************************************
+               About Section Start
+******************************************************** */
+.container{
+    margin-top: 5rem;
+}
+ .about .row{
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     flex-wrap: wrap-reverse;
+     padding: 0 2rem;
+ }
+ .about .row .content-box{
+     flex: 1 1 40rem;
+     display: grid;
+     gap: 1rem;
+     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+ }
+ .about .row .content-box .box{
+   
+     box-shadow: var(--box-shadow);
+     text-align: center;
+     min-height: 10rem;
+     padding-top: 1.5rem;
+     
+     
+ }
+ .about .row .content-box .box h1{
+     color: var(--black);
+     font-size: 2.5rem;
+     padding-top: .5rem;
+ }
+ .about .row .content-box .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+ }
+ .about .row .about-content{
+     flex: 1 1 40rem;
+ }
+ .about .row .about-content h1{
+   font-size: 2.5rem;
+   color: var(--black);
+ }
+ .about .row .about-content h1 span{
+  color: var(--green);
+ }
+ .about .row .about-content p{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+ }
+ .about .row .about-content a{
+     margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 600;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+ }
+ .about .row .about-content a:hover{
+     box-shadow: var(--box-shadow-inset);
+     color: var(--green);
+ }
+
+ .prograss-container{
+     margin: 3rem 2rem;
+     background: var(--bg-color);
+   
+     display: grid;
+     gap: 2rem;
+     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+ }
+ .prograss-container {
+    margin-top: 8rem;
+ }
+ .prograss-container .prograss h1{
+     text-align: start;
+     position: relative;
+     color: var(--black);
+     font-size: 2rem;
+ }
+ .prograss-container .prograss h1 span{
+     text-align: end;
+     position: absolute;
+     top: 0;
+     right: 0;
+    
+ }
+ .prograss-container .prograss .bar{
+     margin-top: 1rem;
+   box-shadow: var(--box-shadow);
+   height: 2rem;
+   border-radius: 2rem;
+    position: relative;
+ }
+ .prograss-container .prograss .bar span{
+    top: .5rem;
+    left: 0;
+    position: absolute;
+    background: var(--green);
+    height: 1rem;
+    border-radius: 2rem;
+    
+ }
+ .prograss-container .prograss .bar span.p1{
+     width:90% ;
+ }
+ .prograss-container .prograss .bar span.p2{
+     width:85% ;
+ }
+ .prograss-container .prograss .bar span.p3{
+     width:70% ;
+ }
+ .prograss-container .prograss .bar span.p4{
+     width:80% ;
+ }
+ .prograss-container .prograss .bar span.p5{
+     width:75% ;
+ }
+ .prograss-container .prograss .bar span.p6{
+     width:50% ;
+ }
+ 
+/* 
+********************************************************
+               About Section Ends
+******************************************************** */
+
+
+
+/* 
+********************************************************
+               Service Section Ends
+******************************************************** */
+
+.service-content{
+    margin: 4rem 2rem;
+    padding: 1rem;
+    display: grid;
+    background: var(--bg-color);
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    box-shadow: var(--box-shadow);
+    gap:2rem;
+}
+.service-content .box{
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  z-index: 0;
+  border-radius: .7rem;
+}
+
+.service-content .box i{
+  font-size: 3rem;
+ color: #fff;
+ margin-bottom: 2rem;
+}
+.service-content .box h2{
+ padding-top: 2rem;
+ font-size: 2rem;
+ color: var(--black);
+}
+.service-content .box p{
+margin-top: 1.5rem;
+font-size: 1.3rem;
+text-align: justify;
+color: var(--light-color);
+}
+.service-content .box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    z-index: -1;
+    clip-path: circle(21.6% at 7% 5%);
+    transition: .4s;
+  }
+  .service-content .box:hover::after{
+    clip-path: circle(100%); 
+  }
+  .service-content .box:hover *{
+      color: #fff;
+  }
+/* 
+********************************************************
+               Service Section Ends
+******************************************************** */
+
+
+/* 
+********************************************************
+               Portfolio Section Ends
+******************************************************** */
+.portfolio-content{
+    margin: 4rem 2rem;
+    padding: 1rem;
+    display: grid;
+   background: var(--bg-color);
+   grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+   box-shadow: var(--box-shadow);
+   gap:2rem;
+   position: relative;
+   place-items: center;
+}
+.portfolio-content .box{
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    border-radius: .7rem;
+    position: relative;
+    transition: .4s;
+    height: 25rem;
+    
+  }
+  .portfolio-content .box img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  .portfolio-content .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    transition: .4s;
+    opacity: 0;
+    transform: scale(0);
+    transition: .4s;
+    display: grid;
+    place-items: center;
+    background: var(--bg-color);
+   
+  }
+
+  .portfolio-content .box .content h2{
+    font-size: 2.5rem;
+    text-align: center;
+    transform: translateY(-5rem); 
+    color: var(--black);
+    transition-delay: .4s;
+    transition: .3s;
+  }
+  .portfolio-content .box:hover .content {
+    opacity: 1;
+    transform: scale(1);
+    background-color: var(--green);
+  } 
+  
+  .portfolio-content .box:hover .content h2 {
+    transform: translateY(0rem); 
+    transition-delay: .4s;
+  } 
+
+/* 
+********************************************************
+               Portfolio Section Ends
+******************************************************** */
+
+
+
+
+/* 
+********************************************************
+               Contact Section Start
+******************************************************** */
+.contact-content{
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    margin-top: 4rem;
+  }
+  .contact-content form {
+      padding: 2rem;
+      
+  }
+  .contact-content form .form-btn{
+    width: 100%;
+    background: none;
+    margin: .5rem 0;
+    padding: 2rem 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+  .contact-content form textarea{
+    width: 100%;
+    margin: .5rem 0;
+    resize: none;
+    
+  }
+  .contact-content form .form-btn:focus{
+      box-shadow: var(--box-shadow-inset);
+      color: var(--green);
+  }
+
+
+/* 
+********************************************************
+               Contact Section Ends
+******************************************************** */
